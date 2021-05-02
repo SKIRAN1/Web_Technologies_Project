@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <title>Dental Website</title>
+    <script type="text/javascript">
+      var i = 0; 			
+      var images = [];	
+      var time = 2000;	
+      images[0] = "13.gif";
+      images[1] = "15.jpg";
+      images[2] = "2.jpg";
+      function changeImg(){
+        document.hello.src = images[i];
+        if(i < images.length - 1){
+          i++; 
+        } else { 
+          i = 0;
+        }
+        setTimeout("changeImg()", time);
+      }
+      window.onload=changeImg;
+      </script>
+  </head>
+<body>
+<header>
+    <img src="1.png">
+    <nav>
+        <ul class="main">
+        <li> <a href="Home.html">Home</a></li>
+        <li> <a href="Dental_care.html">Dental Care</a></li>
+        <li> <a href="Services.html">Services</a></li>
+        <li> <a href="Contact_us.html">Contact Us</a></li>
+        <li> <a href="Game.html">Game</a></li>
+        </ul>
+    </nav>
+</header> 
+<div class="total">
+  <div class="block">
+    <img name="hello" class="i1" src="2.jpg">
+    <article class="article_1">
+    <p><h2>Welcome🙏</h2><b>Dental Hygiene Center</b>,<br>
+       We are glad you have chosen us for your oral health needs and hope that every encounter with our office and staff exceeds your 
+       expectations. We know our patients have a choice in Merrifield dentists, so we go 
+       out of our way to deliver the level of dental care and compassion we would want for
+       our own families.<br>
+       DENTAL HYGIENE offers all the services you need in dental health and dental aesthetics. Our team of general dentists have diversified skills to provide high-quality dental care.
+       From prevention to restoration, you can rely on our empathetic approach, certified methods and cutting-edge equipment to maintain the integrity of your teeth and your health.
+    </p>
+    </article>
+    <article class="article_2">
+       <h2>Why Choose us?</h2>
+        <p>
+          Patients are the heart of our practice, so it makes sense that we would go out of the way to provide comfortable waiting and treatment areas complete with the types of amenities you would expect from the premier dental practice.
+          <br>Our office is filled with state of the art diagnostic and dental treatment technology. We believe our patients deserve only the best, and our staff works hard to deliver.We believe you deserve only the best in oral health care, which is why we have implemented some of the greatest in cutting edge dental technology available today.<br>These advanced systems allow us to provide a sophisticated level of care that surpasses the expectations of our patients, delivering high-quality results with extreme accuracy.
+        </p>
+      </article>
+  </div>
+  <div class="block_1">
+    <h2>Online<br>appointment<br>booking</h2>
+    <article class="article_3">
+    <p>
+      To make an appointment for your routine follow-up, for a specific treatment or for an emergency consultation, contact us at 514-514-5141 or complete the online form. We will offer you a time slot depending on the nature of your request and your needs.
+    </p></article>
+    <button type="button" onclick="location.href='Contact_us.html'">ONLINE APPOINTMENT BOOKING</button>
+    
+  </div>
+</div>
+</body>
+<footer>
+  <article class="article_4">
+  <br><p>Dental Hygiene | 514-514-5141 | dentalhygiene@gmail.com</p>
+</article>
+</footer>
+</html>
